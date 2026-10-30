@@ -27,3 +27,6 @@ For reliable PWA installation/offline testing, serve the folder via localhost ra
 
 ## Notes
 The initial checklist is a planning template, not a claim that systems are implemented. Starter vs Future indicates roadmap category, not completed development.
+
+## Nested checklist items
+Use the **＋** button beside any checklist item to add a child. Children can have their own children, allowing multi-level trees. Progress, search, JSON import/export, and TXT export include descendants. Existing plans remain compatible; export a backup before deploying updates.

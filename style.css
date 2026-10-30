@@ -3,3 +3,7 @@
 /* Design #4 brand identity */
 .brand-icon{display:block;width:40px;height:40px;object-fit:contain;border-radius:0;background:none;font-size:inherit;flex-shrink:0}
 .brand strong{letter-spacing:-.8px}
+/* Nested checklist hierarchy */
+.nested-node{margin-left:14px;border-left:1px solid rgba(125,160,210,.22);padding-left:8px;min-width:0}
+.nested-node .check-row{min-width:0}.nested-node .item-text{min-width:0;overflow-wrap:anywhere;flex:1}
+@media(max-width:600px){.nested-node{margin-left:9px;padding-left:5px}.nested-node .tiny-btn{padding:4px}}
