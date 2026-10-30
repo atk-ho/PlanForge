@@ -30,3 +30,11 @@ The initial checklist is a planning template, not a claim that systems are imple
 
 ## Nested checklist items
 Use the **＋** button beside any checklist item to add a child. Children can have their own children, allowing multi-level trees. Progress, search, JSON import/export, and TXT export include descendants. Existing plans remain compatible; export a backup before deploying updates.
+
+
+## Customizable checklist (v5)
+- Settings: six themes, custom accent, density, checkbox styles, expand icons and independent text/icon/row/indent sizes.
+- Nested task collapse/expand and note previews; bookmark tasks and filter bookmarks; optional reminder text.
+- Drag and drop to reorder tasks within the same parent list on desktop.
+- All preferences stored separately in localStorage (`planforge.preferences.v2`); task data remains in `planforge.v1`.
+- Reminder values are saved as labels only; automatic notifications are not implemented.
