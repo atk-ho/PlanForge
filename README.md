@@ -38,3 +38,13 @@ Use the **＋** button beside any checklist item to add a child. Children can ha
 - Drag and drop to reorder tasks within the same parent list on desktop.
 - All preferences stored separately in localStorage (`planforge.preferences.v2`); task data remains in `planforge.v1`.
 - Reminder values are saved as labels only; automatic notifications are not implemented.
+
+
+## Version 6: Custom scopes and saved color presets
+
+- Settings now allows editing scope labels and colors, and creating unlimited custom scopes.
+- Scope filters include custom scopes. Imported JSON keeps scope IDs, including unknown scopes.
+- Settings supports custom page, panel, card, text, border and accent colors with live preview.
+- Save, apply, rename, duplicate, and delete any number of named color presets.
+- Preferences and scope definitions are stored locally on each browser/device; JSON plan exports include topic scope IDs but do not export device theme presets.
+- Built-in Starter/Future scope IDs cannot be deleted for backwards compatibility. Scopes assigned to any topic cannot be deleted until reassigned.

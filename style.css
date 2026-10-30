@@ -22,3 +22,20 @@ body{background:var(--page);color:var(--foreground)}.sidebar{background:var(--pa
 .task-check:focus-visible + .item-text .task-label{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 .section-top .filters{align-items:center}
 @media(max-width:700px){.plan-title-row{gap:9px}.plan-title-row h1{font-size:clamp(23px,6vw,32px)}.plan-title-row .btn{padding:7px 9px}.section-top .filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.section-top .filters input{width:100%;min-width:0}.section-top .filters>*{min-width:0}.section-top #newTopicBtn{white-space:nowrap}.task-label{padding:2px 0}}
+
+/* PlanForge v6: customizable scopes and color presets */
+body{background:var(--page);color:var(--foreground)}
+.sidebar{background:var(--panel);border-color:var(--stroke)}
+.topic,.stat,.settings-panel,.modal{background:var(--surface);border-color:var(--stroke);color:var(--foreground)}
+.topic-head,.topic-body{border-color:var(--stroke)}
+.custom-scope{color:var(--scope-color)!important;background:color-mix(in srgb,var(--scope-color) 15%,transparent)!important;border:1px solid color-mix(in srgb,var(--scope-color) 42%,transparent)!important;white-space:nowrap}
+.color-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.color-setting{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px;border:1px solid var(--stroke);border-radius:9px;font-size:12px}
+.color-setting input{width:42px;height:32px;padding:1px;background:transparent;border:0;cursor:pointer}
+.setting-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.preset-list,.scope-settings{display:grid;gap:8px;margin:10px 0}
+.preset-row,.scope-setting-row{display:flex;align-items:center;gap:7px;padding:8px;border:1px solid var(--stroke);border-radius:10px;min-width:0}
+.preset-row strong,.scope-setting-name{flex:1;min-width:0;overflow-wrap:anywhere;font-size:12px}
+.preset-row .btn{padding:7px;font-size:11px}.preset-row .tiny-btn,.scope-setting-row .tiny-btn{flex-shrink:0}
+.preset-dot{width:15px;height:15px;border-radius:50%;flex-shrink:0}
+@media(max-width:480px){.color-grid{grid-template-columns:1fr}.preset-row{flex-wrap:wrap}.preset-row strong{min-width:45%}}
