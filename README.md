@@ -86,9 +86,9 @@ PWA installation depends on the browser and device. Offline use requires that th
 4. Select **Deploy from a branch**, choose `main` and `/ (root)`, then save.
 5. Wait for deployment and visit `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
 
-For the `atk-ho/PlanForge` repository, the expected URL is:
+For the `atk-ho/planforge` repository, the expected URL is:
 
-**https://atk-ho.github.io/PlanForge/**
+**https://atk-ho.github.io/planforge/**
 
 For subsequent updates, replace **only the files that changed**, unless a release explicitly requires more files. Your browser may briefly serve cached PWA assets; refresh after deployment.
 
@@ -107,7 +107,7 @@ For PWA/service-worker testing, use localhost or HTTPS rather than opening `inde
 ## Project structure
 
 ```text
-PlanForge/
+planforge/
 ├── index.html             # Application markup
 ├── style.css              # Layout, themes, and responsive styles
 ├── app.js                 # Planner logic and interactions
