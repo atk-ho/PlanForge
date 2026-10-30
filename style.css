@@ -39,3 +39,18 @@ body{background:var(--page);color:var(--foreground)}
 .preset-row .btn{padding:7px;font-size:11px}.preset-row .tiny-btn,.scope-setting-row .tiny-btn{flex-shrink:0}
 .preset-dot{width:15px;height:15px;border-radius:50%;flex-shrink:0}
 @media(max-width:480px){.color-grid{grid-template-columns:1fr}.preset-row{flex-wrap:wrap}.preset-row strong{min-width:45%}}
+/* v7: task action and note experience */
+.task-title{flex:1;min-width:0;text-align:left;color:var(--foreground);background:transparent;border:0;font:inherit;font-size:var(--task-font);line-height:1.4;padding:5px 2px;cursor:pointer;overflow-wrap:anywhere}
+.task-title.done{color:var(--muted);text-decoration:line-through}
+.task-title:hover{color:var(--accent)}.task-title:focus-visible,.note-icon:focus-visible{outline:2px solid var(--accent);border-radius:5px}
+.note-icon{color:var(--accent)}.desktop-delete{color:#fa6774}.mobile-more{display:none}
+.task-menu-shade,.note-backdrop{backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);background:rgba(3,9,22,.68)}
+.task-menu{width:min(92vw,330px);background:var(--surface);color:var(--foreground);border:1px solid var(--stroke);border-radius:14px;padding:14px;box-shadow:0 20px 70px #0009;animation:popIn .18s ease-out}
+.task-menu h3{font-size:14px;margin:0 0 10px;padding:7px 8px 13px;border-bottom:1px solid var(--stroke);overflow-wrap:anywhere}
+.task-menu>button:not(.btn){display:block;width:100%;border:0;background:transparent;color:var(--foreground);text-align:left;padding:13px 10px;font:inherit;cursor:pointer;border-radius:7px}.task-menu>button:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}.task-menu .danger-text{color:#ff6472!important}.task-menu .btn{margin-top:8px;width:100%}
+.note-card{width:min(95vw,680px);max-height:min(85vh,800px);display:flex;flex-direction:column;background:var(--surface);color:var(--foreground);border:1px solid var(--stroke);border-radius:15px;box-shadow:0 30px 100px #000b;overflow:hidden;animation:popIn .2s ease-out}
+.note-card header{display:flex;justify-content:space-between;align-items:center;padding:13px 18px;border-bottom:1px solid var(--stroke)}.note-card header strong{font-size:15px}.note-x{border:0;background:none;color:var(--foreground);font-size:27px;cursor:pointer}.note-content{padding:18px;overflow:auto}.note-content h3{font-size:14px;border-bottom:1px solid var(--stroke);padding-bottom:12px;margin:0 0 12px}.note-body{white-space:pre-wrap;line-height:1.65;font-size:var(--note-font);overflow-wrap:anywhere;min-height:100px}.note-card footer{padding:10px 18px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:11px}.note-confirm{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(90vw,360px);background:var(--panel);border:1px solid var(--stroke);color:var(--foreground);padding:20px;border-radius:13px;box-shadow:0 18px 65px #000b;animation:confirmIn .16s ease-out}.note-confirm p{font-size:13px;color:var(--muted);line-height:1.5}.note-confirm>div{display:flex;gap:9px;justify-content:flex-end}
+@keyframes popIn{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes confirmIn{from{opacity:0;transform:translate(-50%,-48%) scale(.96)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media(max-width:900px){.desktop-edit,.desktop-delete{display:none}.mobile-more{display:inline-block}.check-row{gap:4px}.check-row .tiny-btn{padding:4px}}
+@media(max-width:600px){.note-card{width:96vw;max-height:88dvh}.note-content{padding:13px}.note-card footer{padding:10px 13px}.task-title{font-size:var(--task-font)}}
+@media(prefers-reduced-motion:reduce){.note-card,.task-menu,.note-confirm{animation:none!important}}
